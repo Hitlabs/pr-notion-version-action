@@ -1,6 +1,7 @@
 {
   "name": "pr-web-fix-locales-acton",
   "version": "1.0.0",
+  "type": "module",
   "description": "Runs a node script to escape special chars in locale files for vue-i18n",
   "main": "index.js",
   "repository": {
