@@ -4,8 +4,8 @@ import { readFileSync, writeFileSync, readdirSync } from 'fs'
 const AT_SYMBOL_REGEXP = /[{']*@['}]*/g
 const AT_REPLACEMENT = "{'@'}"
 
-console.log("Current directory filenames:", import.meta.dirname);
-readdirSync(import.meta.dirname).forEach(file => {
+console.log("Current directory filenames:", process.env.GITHUB_WORKSPACE, import.meta.dirname);
+readdirSync(process.env.GITHUB_WORKSPACE).forEach(file => {
   console.log('file', file);
 });
 
