@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync } from 'fs'
 const AT_SYMBOL_REGEXP = /[{']*@['}]*/g
 const AT_REPLACEMENT = "{'@'}"
 
-const filePaths = ['src/i81n/locale/en.json', 'src/i81n/locale/pt.json', 'src/i81n/locale/es.json']
+const filePaths = ['/src/i81n/locale/en.json', '/src/i81n/locale/pt.json', '/src/i81n/locale/es.json']
 
 filePaths.forEach((path) => {
 	// For each given path, read in the json file
