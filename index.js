@@ -9,7 +9,7 @@ readdirSync(process.env.GITHUB_WORKSPACE).forEach(file => {
   console.log('file', file);
 });
 
-const filePaths = ['/src/i81n/locale/en.json', '/src/i81n/locale/pt.json', '/src/i81n/locale/es.json']
+const filePaths = ['src/i18n/locale/en.json', 'src/i18n/locale/pt.json', 'src/i18n/locale/es.json']
 
 filePaths.forEach((path) => {
 	// For each given path, read in the json file
