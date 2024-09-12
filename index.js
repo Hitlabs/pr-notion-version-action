@@ -1,8 +1,13 @@
 import chalk from 'chalk'
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync, writeFileSync, readdirSync } from 'fs'
 
 const AT_SYMBOL_REGEXP = /[{']*@['}]*/g
 const AT_REPLACEMENT = "{'@'}"
+
+console.log("Current directory filenames:", import.meta.dirname);
+readdirSync(import.meta.dirname).forEach(file => {
+  console.log('file', file);
+});
 
 const filePaths = ['/src/i81n/locale/en.json', '/src/i81n/locale/pt.json', '/src/i81n/locale/es.json']
 
