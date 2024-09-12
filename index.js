@@ -13,7 +13,7 @@ const filePaths = ['/src/i81n/locale/en.json', '/src/i81n/locale/pt.json', '/src
 
 filePaths.forEach((path) => {
 	// For each given path, read in the json file
-	const resolvedPath = new URL(path, import.meta.url)
+	const resolvedPath = new URL(path, process.env.GITHUB_WORKSPACE)
 	const json = JSON.parse(readFileSync(resolvedPath))
 	// fix all anomolies in the given file
 	const fixedValues = fixValuesInJson(json)
