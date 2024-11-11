@@ -1,8 +1,6 @@
 import core from '@actions/core'
 import { Client } from '@notionhq/client'
 
-const { Client } = require('@notionhq/client')
-
 const notionApiToken = core.getInput('notion-api-token')
 const notionDatabaseId = core.getInput('notion-database-id')
 const releaseVersion = core.getInput('release-version')
