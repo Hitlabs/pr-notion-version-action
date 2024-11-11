@@ -1,17 +1,17 @@
 {
-  "name": "pr-web-fix-locales-acton",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "Runs a node script to escape special chars in locale files for vue-i18n",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hitlabs/pr-web-fix-locales-acton.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "chalk": "^5.3.0"
-  }
+	"name": "pr-notion-version-action",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Runs a node script to insert a release version into a Notion database",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:Hitlabs/pr-notion-version-action.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"@notionhq/client": "^2.2.15"
+	}
 }

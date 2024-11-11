@@ -1,2 +1,3 @@
-# pr-web-fix-locales-action
-Action for GitHub to fix i18n locale files to escape special characters for vue-i18n
+# pr-notion-version-action
+
+Runs a node script to insert a release version into a Notion database
