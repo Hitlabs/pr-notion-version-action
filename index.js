@@ -13,6 +13,7 @@ try {
 		notionDatabaseId,
 		releaseVersion,
 		releaseDate,
+		apiToken: notionApiToken.length > 0 ? notionApiToken.split('_')[0] : 'N/A',
 	})
 	const result = await notion.pages.create({
 		parent: {
