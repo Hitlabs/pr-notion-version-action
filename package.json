@@ -12,6 +12,7 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
+		"@actions/core": "^1.11.1",
 		"@notionhq/client": "^2.2.15"
 	}
 }
